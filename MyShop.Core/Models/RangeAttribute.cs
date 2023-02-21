@@ -2,7 +2,7 @@
 
 namespace MyShop.Core.Models
 {
-    internal class RangeAttribute : Attribute
+    public class RangeAttribute : Attribute
     {
         public RangeAttribute(int v1, int v2)
         {

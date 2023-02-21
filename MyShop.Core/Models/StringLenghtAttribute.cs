@@ -2,7 +2,7 @@
 
 namespace MyShop.Core.Models
 {
-    internal class StringLenghtAttribute : Attribute
+    public class StringLenghtAttribute : Attribute
     {
         private int v;
 
