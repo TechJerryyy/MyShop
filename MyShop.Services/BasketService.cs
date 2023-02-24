@@ -124,10 +124,10 @@ namespace MyShop.Services
             }
         }
 
-        public BasketSummeryViewModel GetBasketSummery(HttpContextBase httpContext)
+        public BasketSummaryViewModel GetBasketSummary(HttpContextBase httpContext)
         {
             Basket basket = GetBasket(httpContext, false);
-            BasketSummeryViewModel model = new BasketSummeryViewModel(0, 0);
+            BasketSummaryViewModel model = new BasketSummaryViewModel(0, 0);
             if (basket != null)
             {
                 int? basketCount = (from item in basket.BasketItems select item.Quantity).Sum();
@@ -140,7 +140,7 @@ namespace MyShop.Services
             {
                 return model;
             }
-        }
+        }       
     }
 }
 

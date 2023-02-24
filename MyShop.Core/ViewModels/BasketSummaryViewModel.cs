@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace MyShop.Core.ViewModels
 {
-    public class BasketSummeryViewModel
+    public class BasketSummaryViewModel
     {
         public int BasketCount { get; set; }
         public decimal BasketTotal { get; set; }
 
-        public BasketSummeryViewModel()
+        public BasketSummaryViewModel()
         {
         }
-        public BasketSummeryViewModel(int basketCount, decimal basketTotal)
+        public BasketSummaryViewModel(int basketCount, decimal basketTotal)
         {
             this.BasketCount = basketCount;
             this.BasketTotal = basketTotal;
