@@ -19,9 +19,9 @@
 
     @foreach (var item in Model.Products)
     {
-        <div class="col-md-4" style="height:270px;padding:20px;margin:10px;border: solid thin blue">
+        <div class="col-md-4" style="height:270px;padding:20px;margin:10px;border:double blue">
             <div class="col-md-12">
-                <img class="img" style="height: 100px; object-fit:contain" src="~/Content/ProductImages/@item.Image" />
+                <img class="img" style="height: 100px; object-fit: contain" src="~/Content/ProductImages/@item.Image"/>
             </div>
             <div class="col-md-12">
                 <strong>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</strong>
@@ -32,7 +32,7 @@
             <div class="col-md-12">
                 <p>@item.Price</p>
             </div>
-            <div class="col-md-12" style="background-color:whitesmoke; border-radius:inherit">
+            <div class="col-md-12" style="background-color:whitesmoke; border-radius:inherit; border:solid thin blue ">
                 <a href="@Url.Action("AddToBasket", "Basket", new { Id=item.Id })" class="btn btn-group-justified">Add to Basket</a>
             </div>
         </div>
