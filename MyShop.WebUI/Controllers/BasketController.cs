@@ -47,8 +47,9 @@ namespace MyShop.WebUI.Controllers
         [Authorize]
         public ActionResult Checkout()
         {
+            
             Customer customer = customers.Collection().FirstOrDefault(c=>c.Email == User.Identity.Name);
-
+        
             if (customer != null)
             {
                 Order order = new Order()
